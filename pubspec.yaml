@@ -1,0 +1,44 @@
+name: local_ai_chatbot
+description: Local AI ChatBOT - offline-first models, ultra optimized for Android.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  provider: ^6.1.2
+  shared_preferences: ^2.2.3
+  path_provider: ^2.1.4
+  flutter_secure_storage: ^9.0.0
+
+  dio: ^5.6.0
+  permission_handler: ^11.3.1
+  device_info_plus: ^10.1.0
+  url_launcher: ^6.1.10
+
+  ffi: ^2.1.3
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "icon.png"
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "icon.png"
